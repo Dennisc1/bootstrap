@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Pet Cleaning</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous" defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous" defer
+    ></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <a class="navbar-brand" href="#">Pet Cleaning Service</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#dog">Dogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cat">Cats</a></li>
+            <li class="nav-item"><a class="nav-link" href="#racoon">Racoon</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header container bg-white"> 
+      <h1>Dog Lodging Price Calculator</h1>
+    </header>
+
+  <section>
+    <form>
+      <section class="question">
+      <label for="size">Dog Size: </label><br>
+      <select name="size" id="size">
+        <option value="30">Small($30/day)</option>
+        <option value="32">Large($32/day)</option>
+      </select>
+      </section>
+
+    <section class="question">
+      <label for="days">Number of Days: </label><br>
+      <input type="text" id="days" name="days">
+    </section>
+    <button id="button" type="button" onclick="Calculate()">Calculate Price</button>
+      </form>
+      <div id="price" class="stuff"></div>
+      <div id="tax" class="stuff"></div>
+      <div id="total" class="stuff"></div>
+      <table class="table table-dark table-bordered table-striped-columns">
+        <thead>
+        <tr>
+        <th>Dog</th>
+        <th>Cat</th>
+        <th>Racoon</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      </table>
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/cat.jpeg" class="d-block w-100" alt="cat">
+          </div>
+          <div class="carousel-item">
+            <img src="images/dog.webp" class="d-block w-100" alt="dog">
+          </div>
+          <div class="carousel-item">
+            <img src="images/raccoon.jpeg" class="d-block w-100" alt="raccoon">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+    <footer>
+      <!-- place footer here -->
+    </footer>
+  </body>
+</html>
